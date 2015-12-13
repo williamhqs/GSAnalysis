@@ -9,8 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+###Use it from storyboard
+Just drag and drop a UIView to storyboard and change the class to "GSxxxView", that's it.
 
+### You also can use it as normal UIView, but you need to prove the dataSource.
+## Requirements
+IOS 8 and later.
 ## Installation
 
 GSAnalysis is available through [CocoaPods](http://cocoapods.org). To install
