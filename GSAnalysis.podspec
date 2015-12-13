@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "GSAnalysis"
   s.version          = "0.1.0"
-  s.summary          = "A short description of GSAnalysis."
+  s.summary          = "An easy to use libray to draw analysis graphics in swift."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+GSAnalysis is a light weight and easy to use libray to draw analysis graphics in swift. It provides many kinds of graphics which only need you provide the data.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/GSAnalysis"
+  s.homepage         = "https://github.com/williamhqs/GSAnalysis"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "William Hu" => "william.hqs@gmail.com" }
