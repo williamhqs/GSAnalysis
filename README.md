@@ -9,10 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-###Use it from storyboard
+1. Use it from storyboard
 Just drag and drop a UIView to storyboard and change the class to "GSxxxView", that's it.
 
-### You also can use it as normal UIView, but you need to prove the dataSource.
+2. You also can use it as normal UIView
+
+Both way need to provide the dataSources
+
+
 ## Requirements
 IOS 8 and later.
 ## Installation
