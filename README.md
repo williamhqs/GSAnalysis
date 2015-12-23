@@ -6,10 +6,10 @@
 [![License](https://img.shields.io/cocoapods/l/GSAnalysis.svg?style=flat)](http://cocoapods.org/pods/GSAnalysis)
 [![Platform](https://img.shields.io/cocoapods/p/GSAnalysis.svg?style=flat)](http://cocoapods.org/pods/GSAnalysis)
 
-## Screen
+## Screen Shot
 
 <p align="center" >
-<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" alt="GSAnalysis" title="GSAnalysis">
+<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" style="width= 320px; height:640px" alt="GSAnalysis" title="GSAnalysis">
 </p>
 
 
