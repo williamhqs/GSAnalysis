@@ -16,6 +16,26 @@ Just drag and drop a UIView to storyboard and change the class to "GSxxxView", t
 
 Both way need to provide the dataSources
 
+```ruby
+//Add from storyboard
+barChartFromNib.titleLabel.text = "I am from Nib"
+barChartFromNib.points = [(0,0,100),(0,10,100)]
+
+//Add by code
+let frame = CGRect(x: barChartFromNib.frame.origin.x, y: barChartFromNib.frame.height + barChartFromNib.frame.origin.y + 50, width: 200, height: 100)
+let barChart = GSBarChartView(frame: frame)
+
+barChart.barSpace = 15.0
+
+barChart.barWidth = 50.0
+
+barChart.points = [(0,0,100),(0,10,100)]
+
+barChart.barColor1 = UIColor.redColor()
+barChart.barColor2 = UIColor.greenColor()
+barChart.baseLineColor = UIColor.blueColor()
+self.view.addSubview(barChart)
+```
 
 ## Requirements
 IOS 8 and later.

@@ -61,7 +61,7 @@
 		7E292D6D2D6FDCF2E4DF546E02BF8F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F567A0F84D52EF356BEDCB9F4C9AE7 /* Foundation.framework */; };
 		821A26883ED14BDCD7EBADD37D671D17 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = DE002C91FBB91E22ACE186DB505955BE /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		831D33A4C5C5BBC1EC158D9A236C61D7 /* NimbleXCTestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32771F017408506D7418E4ABDD594BA9 /* NimbleXCTestHandler.swift */; };
-		84DA40BBAE54F2D63204264DB0F37A5E /* GSLadderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4F3121E15EA22FA52267FE6BE56E8 /* GSLadderView.swift */; };
+		84DA40BBAE54F2D63204264DB0F37A5E /* GSBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4F3121E15EA22FA52267FE6BE56E8 /* GSBarChartView.swift */; };
 		86D0DDF5D7BBF05AF490DBDA2FCE0E18 /* GSAnalysis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 999B247E963A7D05A0AA332B5B775336 /* GSAnalysis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86DABE920F2113B8D96ED9E8C76390C1 /* HaveValidSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDFD38206302BDD75F4CF1998D5DD4 /* HaveValidSnapshot.swift */; };
 		87165912578E674C9409A621A0FF21FF /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4953F6E7D2BA1C72B639CC7D9A5EB9 /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -209,7 +209,7 @@
 		14326C4BC8E0FA7E4389AA7F77E529B4 /* GSAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438417AFCBD3D478075A35156E748D9 /* PrettySyntax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrettySyntax.swift; sourceTree = "<group>"; };
 		160CBE7729A142944B5FB1512025954D /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
-		17B4F3121E15EA22FA52267FE6BE56E8 /* GSLadderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GSLadderView.swift; sourceTree = "<group>"; };
+		17B4F3121E15EA22FA52267FE6BE56E8 /* GSBarChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GSBarChartView.swift; sourceTree = "<group>"; };
 		187BCC122AEC3080BA71B5B3947AD94A /* Pods-GSAnalysis_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSAnalysis_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		18C4030C33005C7A4BF69E989BB2F4A8 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
 		18CDFD38206302BDD75F4CF1998D5DD4 /* HaveValidSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HaveValidSnapshot.swift; sourceTree = "<group>"; };
@@ -753,7 +753,7 @@
 		F279CD234294EA4BDB6F98210EA8DAC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				17B4F3121E15EA22FA52267FE6BE56E8 /* GSLadderView.swift */,
+				17B4F3121E15EA22FA52267FE6BE56E8 /* GSBarChartView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1152,7 +1152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB64F9A9F05F35CE0AD669408BFC8CA /* GSAnalysis-dummy.m in Sources */,
-				84DA40BBAE54F2D63204264DB0F37A5E /* GSLadderView.swift in Sources */,
+				84DA40BBAE54F2D63204264DB0F37A5E /* GSBarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
