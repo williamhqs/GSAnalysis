@@ -9,7 +9,7 @@
 ## Screen Shot
 
 <p align="center" >
-<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" style="width= 320px; height:640px" alt="GSAnalysis" title="GSAnalysis">
+<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" style="width: 320px; height:640px" alt="GSAnalysis" title="GSAnalysis">
 </p>
 
 
