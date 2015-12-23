@@ -8,10 +8,10 @@
 
 ## Screen
 
-<!--<p align="center" >
-<img src="https://raw.github.com/AFNetworking/AFNetworking/assets/afnetworking-logo.png" alt="AFNetworking" title="AFNetworking">
+<p align="center" >
+<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" alt="GSAnalysis" title="GSAnalysis">
 </p>
--->
+
 
 ## Usage
 
