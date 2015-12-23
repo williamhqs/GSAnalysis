@@ -22,14 +22,12 @@ public class GSBarChartView: UIView {
     public var barSpace: CGFloat = 2.0 {
         didSet{
             points = self.configurePoints()
-            self.setNeedsDisplay()
         }
     }
     // bar width
     public var barWidth: CGFloat = 10.0 {
         didSet{
             points = self.configurePoints()
-            self.setNeedsDisplay()
         }
     }
     // points is the datasource of the bar chart, the tuple is (x, y, height)
