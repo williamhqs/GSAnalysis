@@ -14,9 +14,6 @@ class GSBarChartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Add from storyboard
-        barChartFromNib.titleLabel.text = "I am from Nib"
-        barChartFromNib.points = [(0,0,100),(0,10,100),(0,0,90),(0,10,50),(0,0,70),(0,10,100),(0,0,100),(0,10,100),(0,0,90),(0,10,50),(0,0,20),(0,10,100)]
         
         //Add by code
         let frame = CGRect(x: barChartFromNib.frame.origin.x, y: barChartFromNib.frame.height + barChartFromNib.frame.origin.y + 50, width: 200, height: 100)
@@ -26,7 +23,7 @@ class GSBarChartViewController: UIViewController {
         
         barChart.barWidth = 15.0
         
-        barChart.points = [(0,0,100),(0,10,100),(0,0,90),(0,10,50),(0,0,70),(0,10,100)]
+        barChart.points = [5,6,8,9]
         
         barChart.barColor1 = UIColor.redColor()
         barChart.barColor2 = UIColor.greenColor()
@@ -34,6 +31,13 @@ class GSBarChartViewController: UIViewController {
         self.view.addSubview(barChart)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        //Add from storyboard
+        barChartFromNib.titleLabel.text = "I am from Nib"
+        barChartFromNib.points = [5,6,7,9]
     }
 
     override func didReceiveMemoryWarning() {

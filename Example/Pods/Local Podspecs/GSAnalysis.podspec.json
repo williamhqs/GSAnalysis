@@ -1,16 +1,16 @@
 {
   "name": "GSAnalysis",
-  "version": "0.1.0",
-  "summary": "A short description of GSAnalysis.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/GSAnalysis",
+  "version": "0.2.0",
+  "summary": "An easy to use libray to draw analysis graphics in swift.",
+  "description": "GSAnalysis is a light weight and easy to use libray to draw analysis graphics in swift. It provides many kinds of graphics which only need you provide the data.",
+  "homepage": "https://github.com/williamhqs/GSAnalysis",
   "license": "MIT",
   "authors": {
     "William Hu": "william.hqs@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/GSAnalysis.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/williamhqs/GSAnalysis.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,5 +21,6 @@
     "GSAnalysis": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "frameworks": "UIKit"
 }

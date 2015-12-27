@@ -21,22 +21,29 @@ public class GSBarChartView: UIView {
     // The space between two bars
     public var barSpace: CGFloat = 2.0 {
         didSet{
-            points = self.configurePoints()
+            realPoints = self.configurePoints()
         }
     }
     // bar width
     public var barWidth: CGFloat = 10.0 {
         didSet{
-            points = self.configurePoints()
+            realPoints = self.configurePoints()
+        }
+    }
+    
+    public var points: [NSNumber] = [0] {
+        didSet{
+            realPoints = self.configurePoints()
         }
     }
     // points is the datasource of the bar chart, the tuple is (x, y, height)
-    public var points: [(CGFloat,CGFloat,CGFloat)] = [(0,0,0)] {
-        didSet{
-            points = self.configurePoints()
-        }
-        
-    }
+    var realPoints: [(CGFloat,CGFloat,CGFloat)] = [(0,0,0)]
+    
+    public var leftMargin: CGFloat   = 30.0
+    public var rightMargin: CGFloat  = 30.0
+    public var topMargin: CGFloat    = 30.0
+    public var bottomMargin: CGFloat = 30.0
+    
     // change bar color
     public var barColor1 = UIColor.RGB(121, 210, 199)
     public var barColor2 = UIColor.RGB(42,134,124)
@@ -54,34 +61,41 @@ public class GSBarChartView: UIView {
     }
     
     override public func drawRect(rect: CGRect) {
-        self.drawBaseLine(from: CGPoint(x: 10, y: self.frame.height-30), to: CGPoint(x: self.frame.size.width - 10, y: self.frame.height-30), lineColor:baseLineColor)
         
-        for var i = 0; i<points.count; i++ {
+        self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin), to: CGPoint(x: self.frame.size.width - rightMargin, y: self.frame.height-bottomMargin), lineColor:baseLineColor)
+        
+        for var i = 0; i<realPoints.count; i++ {
             if i%2 == 0 {
-                self.drawChart(point: points[i], rectColor:self.barColor2)
+                self.drawChart(point: realPoints[i], rectColor:self.barColor2)
             }else{
-                self.drawChart(point: points[i],rectColor: self.barColor1)
+                self.drawChart(point: realPoints[i],rectColor: self.barColor1)
             }
         }
     }
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        titleLabel.frame = CGRectMake(0, self.frame.height-30, self.frame.width, 40)
+        titleLabel.frame = CGRectMake(0, self.frame.height-bottomMargin, self.frame.width, 40)
     }
 
     // MARK: Private Methods
     
     func configurePoints() -> [(CGFloat,CGFloat,CGFloat)] {
-        var ar = [(CGFloat,CGFloat)]()
-        for var index = 0; index < points.count; index++ {
-            let y = Int(arc4random_uniform(UInt32(self.frame.height - 30.0 - 30.0)))
-            ar.append((CGFloat(12.0+Double(index)*Double(self.barWidth+self.barSpace)),CGFloat(y)))
-        }
         var pointsT = [(CGFloat,CGFloat,CGFloat)]()
-        for p in ar {
-            let height = self.frame.height - CGFloat(30.0 + p.1)
-            pointsT.append((CGFloat(p.0),CGFloat(p.1),height))
+        let maxHeight = points.maxElement { (a:NSNumber, b:NSNumber) -> Bool in
+            a.floatValue < b.floatValue
+        }
+
+        for var index = 0; index < points.count; index++ {
+            //测试随机高度
+//            let y = Int(arc4random_uniform(UInt32(self.frame.height - self.topMargin - self.bottomMargin)))
+
+            let realFrameHeight = self.frame.height - self.topMargin - self.bottomMargin
+            
+            let height          = realFrameHeight*CGFloat(points[index])/CGFloat(maxHeight!)
+            let y               = self.frame.height - bottomMargin - height
+
+            pointsT.append((CGFloat(Double(leftMargin)+Double(index)*Double(self.barWidth+self.barSpace)),y,CGFloat(height)))
         }
         return pointsT
     }
@@ -90,7 +104,7 @@ public class GSBarChartView: UIView {
         titleLabel.text          = "title"
         titleLabel.textAlignment = .Right
         titleLabel.textColor     = UIColor.RGB(42,134,124)
-        self.backgroundColor     = UIColor.clearColor()
+        self.backgroundColor     = UIColor.blackColor()
         self.addSubview(titleLabel)
     }
     
