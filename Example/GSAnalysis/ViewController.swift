@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Add from storyboard
-        barChartFromNib.titleLabel.text = "I am from Nib"
+        barChartFromNib.xTitleLabel.text = "I am from Nib"
 //        barChartFromNib.points = [(0,0,100),(0,10,100),(0,0,90),(0,10,50),(0,0,70),(0,10,100)]
 
         //Add by code

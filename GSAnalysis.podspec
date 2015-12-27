@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "GSAnalysis"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "An easy to use libray to draw analysis graphics in swift."
 
   s.description      = <<-DESC

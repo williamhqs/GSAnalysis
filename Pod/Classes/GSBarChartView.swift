@@ -16,8 +16,10 @@ extension UIColor {
 
 public class GSBarChartView: UIView {
 
-    // x axle title
-    public lazy var titleLabel: UILabel = UILabel()
+    // X and Y axle title
+    public lazy var xTitleLabel: UILabel = UILabel()
+    public lazy var yTitleLabel: UILabel = UILabel()
+    
     // The space between two bars
     public var barSpace: CGFloat = 2.0 {
         didSet{
@@ -36,6 +38,10 @@ public class GSBarChartView: UIView {
             realPoints = self.configurePoints()
         }
     }
+    
+    // X and Y axel height
+    public var baseLineHeight:CGFloat = 2.0
+    
     // points is the datasource of the bar chart, the tuple is (x, y, height)
     var realPoints: [(CGFloat,CGFloat,CGFloat)] = [(0,0,0)]
     
@@ -62,7 +68,13 @@ public class GSBarChartView: UIView {
     
     override public func drawRect(rect: CGRect) {
         
+        //X
         self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin), to: CGPoint(x: self.frame.size.width - rightMargin, y: self.frame.height-bottomMargin), lineColor:baseLineColor)
+        //Y
+        self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin+baseLineHeight/2), to: CGPoint(x: leftMargin, y: topMargin-10), lineColor:baseLineColor)
+        
+        // Y axel dash line
+        self.drawBaseLine(from: CGPoint(x: leftMargin-baseLineHeight, y: topMargin), to: CGPoint(x: leftMargin+baseLineHeight, y: topMargin), lineColor:baseLineColor)
         
         for var i = 0; i<realPoints.count; i++ {
             if i%2 == 0 {
@@ -75,7 +87,8 @@ public class GSBarChartView: UIView {
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        titleLabel.frame = CGRectMake(0, self.frame.height-bottomMargin, self.frame.width, 40)
+        xTitleLabel.frame = CGRectMake(0, self.frame.height-bottomMargin, self.frame.width, 40)
+        yTitleLabel.frame = CGRectMake(0, topMargin-10, leftMargin, 20)
     }
 
     // MARK: Private Methods
@@ -95,22 +108,31 @@ public class GSBarChartView: UIView {
             let height          = realFrameHeight*CGFloat(points[index])/CGFloat(maxHeight!)
             let y               = self.frame.height - bottomMargin - height
 
-            pointsT.append((CGFloat(Double(leftMargin)+Double(index)*Double(self.barWidth+self.barSpace)),y,CGFloat(height)))
+            pointsT.append((barWidth + CGFloat(Double(leftMargin)+Double(index)*Double(self.barWidth+self.barSpace)),y,CGFloat(height)))
         }
         return pointsT
     }
     
     func basicConfigure() {
-        titleLabel.text          = "title"
-        titleLabel.textAlignment = .Right
-        titleLabel.textColor     = UIColor.RGB(42,134,124)
-        self.backgroundColor     = UIColor.clearColor()
-        self.addSubview(titleLabel)
+        xTitleLabel.text          = "X-title"
+        xTitleLabel.textAlignment = .Right
+        xTitleLabel.font            = UIFont.systemFontOfSize(12.0)
+        xTitleLabel.textColor     = UIColor.RGB(42,134,124)
+        self.backgroundColor      = UIColor.clearColor()
+        
+        yTitleLabel.text            = "Y-title"
+        yTitleLabel.font            = UIFont.systemFontOfSize(12.0)
+        yTitleLabel.backgroundColor = UIColor.clearColor()
+        yTitleLabel.textAlignment   = .Center
+        yTitleLabel.textColor       = self.baseLineColor
+
+        self.addSubview(xTitleLabel)
+        self.addSubview(yTitleLabel)
     }
     
     func drawBaseLine (from point1:CGPoint, to point2:CGPoint, lineColor color:UIColor) {
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetLineWidth(context, 2)
+        CGContextSetLineWidth(context, baseLineHeight)
         CGContextSetStrokeColorWithColor(context, color.CGColor)
         CGContextMoveToPoint(context, point1.x, point1.y+1)
         CGContextAddLineToPoint(context, point2.x, point2.y+1)

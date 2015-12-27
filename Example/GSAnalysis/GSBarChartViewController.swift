@@ -36,8 +36,12 @@ class GSBarChartViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         //Add from storyboard
-        barChartFromNib.titleLabel.text = "I am from Nib"
-        barChartFromNib.points = [5,6,7,9]
+        barChartFromNib.backgroundColor = UIColor.clearColor()
+        barChartFromNib.xTitleLabel.text = "I am from Nib"
+        barChartFromNib.leftMargin = 50.0
+        barChartFromNib.points = [355,206,17,9]
+        barChartFromNib.yTitleLabel.text = String((barChartFromNib.points.maxElement{$0.floatValue<$1.floatValue})!)
+        
     }
 
     override func didReceiveMemoryWarning() {
