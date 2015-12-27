@@ -104,7 +104,7 @@ public class GSBarChartView: UIView {
         titleLabel.text          = "title"
         titleLabel.textAlignment = .Right
         titleLabel.textColor     = UIColor.RGB(42,134,124)
-        self.backgroundColor     = UIColor.blackColor()
+        self.backgroundColor     = UIColor.clearColor()
         self.addSubview(titleLabel)
     }
     
