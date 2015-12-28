@@ -36,7 +36,7 @@ class GSBarChartViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         //Add from storyboard
-        barChartFromNib.backgroundColor = UIColor.clearColor()
+        barChartFromNib.backgroundColor = UIColor.redColor()
         barChartFromNib.xTitleLabel.text = "I am from Nib"
         barChartFromNib.leftMargin = 50.0
         barChartFromNib.points = [355,206,17,9]

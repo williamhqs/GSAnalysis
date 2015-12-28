@@ -69,7 +69,7 @@ public class GSBarChartView: UIView {
     override public func drawRect(rect: CGRect) {
         
         //X
-        self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin), to: CGPoint(x: self.frame.size.width - rightMargin, y: self.frame.height-bottomMargin), lineColor:baseLineColor)
+        self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin), to: CGPoint(x: self.frame.size.width , y: self.frame.height-bottomMargin), lineColor:baseLineColor)
         //Y
         self.drawBaseLine(from: CGPoint(x: leftMargin, y: self.frame.height-self.bottomMargin+baseLineHeight/2), to: CGPoint(x: leftMargin, y: topMargin-10), lineColor:baseLineColor)
         
