@@ -1,18 +1,22 @@
 //
-//  GSLineChartViewController.swift
+//  GSGradientViewController.swift
 //  GSAnalysis
 //
-//  Created by 胡秋实 on 25/12/2015.
-//  Copyright © 2015 CocoaPods. All rights reserved.
+//  Created by 胡秋实 on 4/1/2016.
+//  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import GSAnalysis
-class GSLineChartViewController: UIViewController {
+class GSGradientViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let gradientView = GSGradientView(frame: CGRectMake(80,370,220,128))
+        gradientView.startColor = UIColor.blueColor()
+        gradientView.cornerSize = CGSize(width: 10, height: 10)
+        gradientView.backgroundColor = UIColor.clearColor()
+        self.view.addSubview(gradientView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,9 +24,7 @@ class GSLineChartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
+
     /*
     // MARK: - Navigation
 
