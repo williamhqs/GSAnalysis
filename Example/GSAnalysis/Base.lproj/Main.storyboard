@@ -216,59 +216,17 @@
                     <view key="view" contentMode="scaleToFill" id="9hL-iN-vOI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omn-ev-qSJ" customClass="GSGradientView" customModule="GSAnalysis">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.98039215686274506" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.9882352941176471" green="0.30980392156862746" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Omn-ev-qSJ" firstAttribute="top" secondItem="ax4-RQ-vsS" secondAttribute="bottom" constant="96" id="2X2-Mw-JC8"/>
-                            <constraint firstItem="qpz-Iz-g1W" firstAttribute="top" secondItem="Omn-ev-qSJ" secondAttribute="bottom" constant="268" id="8Gv-4p-luC"/>
-                            <constraint firstItem="Omn-ev-qSJ" firstAttribute="leading" secondItem="9hL-iN-vOI" secondAttribute="leading" constant="20" id="r1b-hZ-Dgb"/>
-                            <constraint firstAttribute="trailing" secondItem="Omn-ev-qSJ" secondAttribute="trailing" constant="20" id="vZV-fo-uh4"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Omn-ev-qSJ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8Gv-4p-luC"/>
-                                <exclude reference="2X2-Mw-JC8"/>
-                                <exclude reference="r1b-hZ-Dgb"/>
-                                <exclude reference="vZV-fo-uh4"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Omn-ev-qSJ"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8Gv-4p-luC"/>
-                                <include reference="2X2-Mw-JC8"/>
-                                <include reference="r1b-hZ-Dgb"/>
-                                <include reference="vZV-fo-uh4"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yu8-g5-ObC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948.5" y="312"/>
+            <point key="canvasLocation" x="2326.5" y="325"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bS5-sN-8r1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Iad-pn-LD1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="123" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Iad-pn-LD1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YbM-ZK-ceB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
