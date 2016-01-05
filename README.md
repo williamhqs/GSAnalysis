@@ -10,8 +10,9 @@ GSAnalysis is a simple analysis graphic library written in swift. It includes Ap
 
 ## Screenshot
 <p align="center" >
-<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/screenshot.png" style="width: 50%; height:50%" alt="GSAnalysis" title="GSAnalysis">
+<img src="https://raw.githubusercontent.com/williamhqs/GSAnalysis/master/Example/gsanalysis.gif">style="width: 50%; height:50%" alt="GSAnalysis" title="GSAnalysis">
 </p>
+
 
 ## Usage
 
