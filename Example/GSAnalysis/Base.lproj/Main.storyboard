@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -11,12 +12,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="GSMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wry-lm-pqw" customClass="GSMenuTableViewController" customModule="GSAnalysis_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="oVf-xM-0fV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="blx-Au-W30">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="blx-Au-W30" id="FTN-JS-xcb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -41,6 +45,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WZ8-ZH-H0X"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5vd-4V-Rn0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0P3-KJ-4Ni" customClass="GSGradientView" customModule="GSAnalysis">
@@ -237,10 +242,10 @@
                                 <exclude reference="Omn-ev-qSJ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="8Gv-4p-luC"/>
                                 <exclude reference="2X2-Mw-JC8"/>
                                 <exclude reference="r1b-hZ-Dgb"/>
                                 <exclude reference="vZV-fo-uh4"/>
-                                <exclude reference="8Gv-4p-luC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -248,10 +253,10 @@
                                 <include reference="Omn-ev-qSJ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="8Gv-4p-luC"/>
                                 <include reference="2X2-Mw-JC8"/>
                                 <include reference="r1b-hZ-Dgb"/>
                                 <include reference="vZV-fo-uh4"/>
-                                <include reference="8Gv-4p-luC"/>
                             </mask>
                         </variation>
                     </view>
