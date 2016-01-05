@@ -4,6 +4,7 @@
 GSAnalysis is a simple analysis graphic library written in swift. It includes Apple Health like analysis graphic view.
 
 [![CI Status](http://img.shields.io/travis/William Hu/GSAnalysis.svg?style=flat)](https://travis-ci.org/William Hu/GSAnalysis)
+
 [![Version](https://img.shields.io/cocoapods/v/GSAnalysis.svg?style=flat)](http://cocoapods.org/pods/GSAnalysis)
 [![License](https://img.shields.io/cocoapods/l/GSAnalysis.svg?style=flat)](http://cocoapods.org/pods/GSAnalysis)
 [![Platform](https://img.shields.io/cocoapods/p/GSAnalysis.svg?style=flat)](http://cocoapods.org/pods/GSAnalysis)
@@ -35,7 +36,7 @@ override func viewDidLayoutSubviews() {
   barChartFromNib.points = [5,6,7,9]
 }
 ```
-
+```
 //Add by code
 let frame = CGRect(x: barChartFromNib.frame.origin.x, y: barChartFromNib.frame.height + barChartFromNib.frame.origin.y + 50, width: 200, height: 100)
 let barChart = GSBarChartView(frame: frame)
@@ -50,9 +51,7 @@ barChart.barColor1 = UIColor.redColor()
 barChart.barColor2 = UIColor.greenColor()
 barChart.baseLineColor = UIColor.blueColor()
 self.view.addSubview(barChart)
-```
 
-```
 let lineView = GSLineView(frame: CGRect(x: 50,y: 100,width: 300,height: 300))
 lineView.points = [4, 2, 6, 4, 5, 8, 3]
 lineView.startColor = UIColor(red: 250/255.0, green: 233/255.0, blue: 222/255.0, alpha: 1.0)
