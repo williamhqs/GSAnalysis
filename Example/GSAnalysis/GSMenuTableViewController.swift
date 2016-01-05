@@ -16,7 +16,7 @@ class GSMenuTableViewController: UITableViewController {
          self.clearsSelectionOnViewWillAppear = true
 
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,16 +31,15 @@ class GSMenuTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-//        cell.textLabel?.text = ["Gradient View ","Bar Chart View","Line View"][indexPath.row]
-//        cell.detailTextLabel?.text = ["GSGradientView","GSBarChartView","GSLineView"][indexPath.row]
-        cell.textLabel?.text = ["Gradient View ","Bar Chart View"][indexPath.row]
-        cell.detailTextLabel?.text = ["GSGradientView","GSBarChartView"][indexPath.row]
+        cell.textLabel?.text = ["Gradient View ","Bar Chart View","Line View"][indexPath.row]
+        cell.detailTextLabel?.text = ["GSGradientView","GSBarChartView","GSLineView"][indexPath.row]
+
         return cell
     }
     
@@ -53,7 +52,7 @@ class GSMenuTableViewController: UITableViewController {
             let chartVC = self.storyboard?.instantiateViewControllerWithIdentifier("GSBarChartViewController") as! GSBarChartViewController
             self.navigationController?.pushViewController(chartVC, animated: true)
         case 2:
-            let chartVC = self.storyboard?.instantiateViewControllerWithIdentifier("GSBarChartViewController") as! GSBarChartViewController
+            let chartVC = self.storyboard?.instantiateViewControllerWithIdentifier("GSLineChartViewController") as! GSLineChartViewController
             self.navigationController?.pushViewController(chartVC, animated: true)
         default:
             break

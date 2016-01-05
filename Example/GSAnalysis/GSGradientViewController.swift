@@ -12,7 +12,7 @@ class GSGradientViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let gradientView = GSGradientView(frame: CGRectMake(80,370,220,128))
+        let gradientView = GSGradientView(frame: CGRectMake(80,390,220,128))
         gradientView.startColor = UIColor.blueColor()
         gradientView.cornerSize = CGSize(width: 10, height: 10)
         gradientView.backgroundColor = UIColor.clearColor()
