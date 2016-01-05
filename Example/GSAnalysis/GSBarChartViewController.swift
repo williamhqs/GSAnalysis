@@ -16,7 +16,7 @@ class GSBarChartViewController: UIViewController {
         super.viewDidLoad()
         
         //Add by code
-        let frame = CGRect(x: barChartFromNib.frame.origin.x, y: barChartFromNib.frame.height + barChartFromNib.frame.origin.y + 50, width: 200, height: 100)
+        let frame = CGRect(x: barChartFromNib.frame.origin.x+20, y: barChartFromNib.frame.height + barChartFromNib.frame.origin.y , width: 200, height: 200)
         let barChart = GSBarChartView(frame: frame)
         
         barChart.barSpace = 15.0
@@ -27,7 +27,8 @@ class GSBarChartViewController: UIViewController {
         
         barChart.barColor1 = UIColor.redColor()
         barChart.barColor2 = UIColor.greenColor()
-        barChart.baseLineColor = UIColor.blueColor()
+        barChart.baseLineColor = UIColor.grayColor()
+        barChart.yTitleLabel.text = "Y"
         self.view.addSubview(barChart)
 
         // Do any additional setup after loading the view.

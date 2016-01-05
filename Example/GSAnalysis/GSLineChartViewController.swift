@@ -13,8 +13,8 @@ class GSLineChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let lineView = GSLineView(frame: CGRect(x: 50,y: 100,width: 300,height: 300))
-        lineView.points = [4, 2, 6, 4, 5, 8, 3]
+        let lineView = GSLineView(frame: CGRect(x: 50,y: 200,width: 280,height: 200))
+        lineView.points = [4, 1, 6, 10, 5, 8, 3]
         lineView.startColor = UIColor(red: 250/255.0, green: 233/255.0, blue: 222/255.0, alpha: 1.0)
         lineView.endColor = UIColor(red: 252/255.0, green: 79/255.0, blue: 8/255.0, alpha: 1.0)
         self.view.addSubview(lineView)

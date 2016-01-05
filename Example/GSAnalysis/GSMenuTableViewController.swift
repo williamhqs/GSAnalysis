@@ -13,8 +13,8 @@ class GSMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         self.clearsSelectionOnViewWillAppear = true
-
+        self.clearsSelectionOnViewWillAppear = true
+        self.title = "GSAnalysis"
     }
     
     override func didReceiveMemoryWarning() {

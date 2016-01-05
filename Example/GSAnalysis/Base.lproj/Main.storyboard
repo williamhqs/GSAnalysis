@@ -178,7 +178,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="koC-hj-POY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="187" id="EK2-89-eTd"/>
+                            <constraint firstItem="koC-hj-POY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="187" id="EK2-89-eTd">
+                                <variation key="widthClass=compact" constant="60"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="koC-hj-POY" secondAttribute="trailing" constant="58" id="TFe-NQ-z6U"/>
                             <constraint firstItem="koC-hj-POY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="62" id="kIt-W6-IID"/>
                         </constraints>
