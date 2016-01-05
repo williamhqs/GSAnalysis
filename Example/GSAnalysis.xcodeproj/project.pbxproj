@@ -11,6 +11,7 @@
 		3D7448AA1C2A614700B7FF91 /* GSBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7448A91C2A614700B7FF91 /* GSBarChartViewController.swift */; };
 		3D7448AC1C2AAD0600B7FF91 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D7448AB1C2AAD0600B7FF91 /* screenshot.png */; };
 		3D7448AE1C2CE94F00B7FF91 /* GSLineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7448AD1C2CE94F00B7FF91 /* GSLineChartViewController.swift */; };
+		3DA74DE61C3BD1940033A0D6 /* gsanalysis.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DA74DE51C3BD1940033A0D6 /* gsanalysis.gif */; };
 		3DFB9A561C3A603800AC6AEA /* GSMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB9A551C3A603800AC6AEA /* GSMenuTableViewController.swift */; };
 		3DFB9A581C3A62B900AC6AEA /* GSGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB9A571C3A62B900AC6AEA /* GSGradientViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 		3D7448A91C2A614700B7FF91 /* GSBarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSBarChartViewController.swift; sourceTree = "<group>"; };
 		3D7448AB1C2AAD0600B7FF91 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 		3D7448AD1C2CE94F00B7FF91 /* GSLineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSLineChartViewController.swift; sourceTree = "<group>"; };
+		3DA74DE51C3BD1940033A0D6 /* gsanalysis.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gsanalysis.gif; sourceTree = "<group>"; };
 		3DFB9A551C3A603800AC6AEA /* GSMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSMenuTableViewController.swift; sourceTree = "<group>"; };
 		3DFB9A571C3A62B900AC6AEA /* GSGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSGradientViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GSAnalysis_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSAnalysis_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 			children = (
 				0897649620469645556BD58F /* GSAnalysis.podspec */,
 				3D7448AB1C2AAD0600B7FF91 /* screenshot.png */,
+				3DA74DE51C3BD1940033A0D6 /* gsanalysis.gif */,
 				9B35C4BE0BAE2490C17744D9 /* README.md */,
 				6482E5B41F642F0B1FE531D0 /* LICENSE */,
 			);
@@ -262,6 +265,7 @@
 				3D7448AC1C2AAD0600B7FF91 /* screenshot.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				3DA74DE61C3BD1940033A0D6 /* gsanalysis.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
